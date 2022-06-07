@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 const app = express()
 const indexRouter = require('./routes/index')
@@ -16,4 +18,6 @@ app.use('/images', express.static(__dirname + '/images'));
 
 
 
-app.listen(8080)
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
