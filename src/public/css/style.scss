@@ -6,8 +6,6 @@ $fontColor: #BFBFBF;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid;
-  ;
 }
 
 body {
@@ -18,17 +16,22 @@ body {
 
     #header {
       background: lightblue;
-      height: 30px;
+      height: 50px;
       position: fixed;
       width: 100%;
       top: 0;
-      
+
+      #logo {
+        position: relative;
+        top: 25%;
+      }
+
       nav {
         background: lightcoral;
         height: 100vh;
         width: 100%;
         position: fixed;
-        top: 30px;
+        top: 50px;
         left: -100%;
         z-index: 100;
         transition: .4s all ease-in-out;
@@ -47,7 +50,9 @@ body {
       #menu-toggler {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 10px;
+        top: 25%;
+
       }
     }
   }
@@ -60,6 +65,13 @@ body {
     text-align: center;
     height: 150px;
     font-size: 1.8rem;
+  }
+
+  #toTop {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    background: red;
   }
 
   @media(max-width: 750px) {

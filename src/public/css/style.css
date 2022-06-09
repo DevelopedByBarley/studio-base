@@ -3,7 +3,6 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid;
 }
 
 body {
@@ -16,10 +15,15 @@ body #container {
 
 body #container #header {
   background: lightblue;
-  height: 30px;
+  height: 50px;
   position: fixed;
   width: 100%;
   top: 0;
+}
+
+body #container #header #logo {
+  position: relative;
+  top: 25%;
 }
 
 body #container #header nav {
@@ -27,7 +31,7 @@ body #container #header nav {
   height: 100vh;
   width: 100%;
   position: fixed;
-  top: 30px;
+  top: 50px;
   left: -100%;
   z-index: 100;
   -webkit-transition: .4s all ease-in-out;
@@ -47,7 +51,8 @@ body #container #header nav.active {
 body #container #header #menu-toggler {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 10px;
+  top: 25%;
 }
 
 body #message-line {
@@ -63,6 +68,13 @@ body #message-line {
   text-align: center;
   height: 150px;
   font-size: 1.8rem;
+}
+
+body #toTop {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  background: red;
 }
 
 @media (max-width: 750px) {
