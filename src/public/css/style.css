@@ -18,7 +18,7 @@ body #container {
   min-width: 338px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   body #container #header {
     background: #3A3838;
     height: 50px;
@@ -64,6 +64,12 @@ body #container {
   body #container #header i {
     color: white;
   }
+}
+
+body #container #message-line {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2rem;
 }
 
 #heading {
@@ -150,9 +156,18 @@ body #container {
   font-size: 3rem;
 }
 
-#message-line {
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 2rem;
+#toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  opacity: .4;
+  padding: .5rem;
+  border-radius: 20%;
+  border: 1px solid;
+}
+
+#toTop i {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

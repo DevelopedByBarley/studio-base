@@ -22,6 +22,9 @@ img {
 
 
 
+
+
+
 body {
   background: $basicColor;
 
@@ -30,9 +33,8 @@ body {
 
 
 
-
     // Phone styles // 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
       #header {
         background: $backgroundColor;
         height: 50px;
@@ -59,6 +61,7 @@ body {
           left: -100%;
           z-index: 0;
           transition: .4s all ease-in-out;
+
           a {
             display: block;
             text-align: center;
@@ -78,6 +81,7 @@ body {
           right: 10px;
           top: 25%;
         }
+
         i {
           color: white;
         }
@@ -89,8 +93,23 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+    #message-line {
+      text-align: center;
+      font-size: 1.8rem;
+      padding: 2rem;
+    }
   }
 }
+
 
 #heading {
   position: relative;
@@ -139,7 +158,7 @@ body {
 
       #img-container {
         @include flex-center-column(flex, center, column);
-        
+
         #header-image {
           -webkit-box-shadow: 5px 5px 17px 9px #000000;
           box-shadow: 5px 5px 17px 9px #000000;
@@ -157,8 +176,17 @@ body {
   }
 }
 
-#message-line {
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 2rem;
+#toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  opacity: .4;
+  padding: .5rem;
+  border-radius: 20%;
+  border: 1px solid;
+
+  i {
+    color: black;
+  }
 }
