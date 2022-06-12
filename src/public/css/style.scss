@@ -2,6 +2,11 @@ $basicColor: whitesmoke;
 $backgroundColor : #3A3838;
 $fontColor: whitesmoke;
 
+img {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @mixin flex-center-column($display, $position, $direction) {
   display: $display;
   align-items: $position;
@@ -15,10 +20,7 @@ $fontColor: whitesmoke;
   margin: 0;
 }
 
-img {
-  width: 70%;
-  margin: 0 auto;
-}
+
 
 body {
   background: $basicColor;
@@ -26,9 +28,13 @@ body {
   #container {
     min-width: 338px;
 
+
+
+
+    // Phone styles // 
     @media (max-width: 768px) {
       #header {
-        background: lightblue;
+        background: $backgroundColor;
         height: 50px;
         position: fixed;
         width: 100%;
@@ -37,6 +43,7 @@ body {
         #logo {
           position: relative;
           top: 25%;
+          color: white;
         }
 
         #heading-content {
@@ -44,7 +51,7 @@ body {
         }
 
         nav {
-          background: lightcoral;
+          background: $backgroundColor;
           height: 100vh;
           width: 100%;
           position: fixed;
@@ -52,11 +59,12 @@ body {
           left: -100%;
           z-index: 0;
           transition: .4s all ease-in-out;
-
           a {
             display: block;
             text-align: center;
             height: 6%;
+            text-decoration: none;
+            color: white;
           }
         }
 
@@ -69,10 +77,18 @@ body {
           top: 0;
           right: 10px;
           top: 25%;
-
+        }
+        i {
+          color: white;
         }
       }
     }
+
+
+
+
+
+
   }
 }
 
@@ -83,7 +99,7 @@ body {
   #headline {
     margin-top: 50px;
     padding: 4rem;
-    margin: 4rem 2rem;
+    margin: 5rem 2rem;
     text-align: center;
 
 
@@ -96,7 +112,7 @@ body {
     }
 
     hr {
-      width: 50%;
+      width: 70%;
       margin: 0 auto;
     }
   }
@@ -123,10 +139,13 @@ body {
 
       #img-container {
         @include flex-center-column(flex, center, column);
-
-        img {
+        
+        #header-image {
           -webkit-box-shadow: 5px 5px 17px 9px #000000;
           box-shadow: 5px 5px 17px 9px #000000;
+          max-width: 500px;
+          width: 80%;
+          margin: 0 auto;
         }
       }
 
