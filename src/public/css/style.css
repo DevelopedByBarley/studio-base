@@ -78,14 +78,13 @@ body #container #message-line {
 }
 
 #heading #headline {
-  margin-top: 50px;
-  padding: 4rem;
   margin: 5rem 2rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 #heading #headline h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 #heading #headline p {
