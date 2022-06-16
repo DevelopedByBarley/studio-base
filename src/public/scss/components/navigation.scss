@@ -1,0 +1,59 @@
+@media (max-width: 1200px) {
+  #header {
+    background: $backgroundColor;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    #logo {
+      position: relative;
+      top: 25%;
+      color: white;
+    }
+
+    #heading-content {
+      display: none;
+    }
+
+    nav {
+      background: $backgroundColor;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 50px;
+      left: -100%;
+      z-index: 0;
+      transition: 0.4s all ease-in-out;
+
+      a {
+        display: block;
+        text-align: center;
+        height: 6%;
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    nav.active {
+      left: 0;
+    }
+
+    #menu-toggler {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      top: 25%;
+    }
+
+    i {
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #header {
+    display: none;
+  }
+}

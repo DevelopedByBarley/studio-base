@@ -1,0 +1,17 @@
+
+$basicColor: whitesmoke;
+$backgroundColor : #3A3838;
+$fontColorLight: whitesmoke;
+$fontColorDark: #3A3838;
+
+
+
+//Mixin
+
+@mixin flex-center-column($display, $position, $direction) {
+  display: $display;
+  align-items: $position;
+  justify-content: $position;
+  flex-direction: $direction;
+}
+

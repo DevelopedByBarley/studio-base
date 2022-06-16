@@ -1,0 +1,8 @@
+#message-line {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2rem;
+  border: 1px solid;
+  height: 200px;
+  @include flex-center-column(flex, center, column);
+}
